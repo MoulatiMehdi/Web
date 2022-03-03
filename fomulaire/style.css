@@ -1,0 +1,87 @@
+*{
+    text-transform: capitalize;
+    box-sizing: border-box;
+
+}
+html , body{
+    margin:0;
+    height: 100%;
+    width:100%;
+    padding: 0;
+    display: table;
+
+}
+body{
+    background-image: linear-gradient(to right, #F299DA, #F238E6,#9080F2,#6DBFF2,#99E2F2);
+    display: table-cell;
+    vertical-align: middle;
+}
+form{
+    display: table;
+    margin: auto;
+}
+.tab{
+    display: none;
+
+    
+}
+.step{
+    height: 70px;
+    width: 70px;
+    margin: 0 50px;
+    background-color: #dddddd;
+    color: white;
+    font-size: 50px;
+    font-family: 'Arial Rounded MT';
+    text-align: center;
+    line-height: 70px;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    opacity: 0.6;
+    box-shadow: 0px 0px 5px 1px black ;
+
+}
+#prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+.boxs{
+    margin-top: 40px ;
+    min-width: 500px;
+    
+}
+button:hover
+{
+    opacity: 0.8;
+}
+#regForm {
+
+    background-color: white;
+    margin: 40px auto;
+    padding: 50px;
+    width: 70%;
+    min-width: 500px;
+
+    border-radius: 25px;
+    transition: ease-in-out 3s;
+
+  }
+.progress{
+    height: 9px;
+    width: 480px;
+    margin: 10px 0 ;
+
+}
+.progress-bar{
+    width: 0;
+
+}
+.step.active{
+   opacity: 1;
+   background-color: blueviolet;
+   box-shadow: 0px 0px 10px 4px white ;
+}
+.step.finish{
+    background-color: blueviolet;
+}

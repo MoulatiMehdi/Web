@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #5061ff, #0cdaf5, #9dfa34);
+
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.cell {
+    width: 150px;
+    height: 150px;
+    background: black;
+    border: 1px solid #C779D0;
+    cursor: pointer;
+    line-height: 150px;
+    font-size: 100px;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px;
+}
+
+.status {
+    font-size: 70px;
+    color: white;
+    margin: 40px auto 20px auto;
+}
+
+.restart {
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 45px;
+    color: white;
+    background: none;
+    border: 5px solid  ;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: ease-out 0.6s;
+}
+.restart:hover
+{
+    transition: ease-in 0.6s;
+    border-color: rgb(201, 2, 201);
+}
