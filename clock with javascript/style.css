@@ -1,0 +1,135 @@
+body
+{
+    width: 100%;
+    height: 100%;
+
+}
+
+.backclock
+{
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    margin: auto;
+
+    border-radius: 50%;
+    background-image:radial-gradient(#b7dff1 20%,#1c9df3);
+    width: 600px;
+    height: 600px;
+    box-shadow: black 0px 0px 10px 4px;
+  
+}
+/* the clock */
+.clock
+{
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    margin: auto;
+    
+
+    height: 500px;
+    width: 500px;
+
+    background:url(./clock.png) white no-repeat center;
+    border: 10px solid black;
+    border-radius: 50%;
+}
+/* hour's arrow*/
+.hours
+{
+    position: absolute;
+    height: 130px ;
+    width: 15px;
+    top: 150px;
+    left: 242.5px;;
+
+
+    background-color: black;
+    transform-origin: 50% 77.5%; 
+    animation: hourRotation 43200s linear infinite;
+
+}
+/* minute's arrow*/
+.minutes{
+
+    position: absolute;
+    height: 240px ;
+    width: 10px;
+    top: 50px;
+    left: 245px;
+
+    background-color: black;
+    transform-origin: 50% 83.5%;
+    animation: minuteRotation 3600s linear infinite;
+}
+
+/* second's arrow*/
+.seconds
+{
+    position: absolute;
+    height: 220px ;
+    width: 5px;
+    top: 70px;
+    left: 247.5px;
+
+    background-color: red;
+    transform-origin: 50% 82%;
+    z-index: 1;
+
+    animation: secondRotation 60s linear infinite;
+
+
+}
+/* rectangle in the Second arrow */
+.seconds::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    height: 30px;
+    width: 15px;
+
+    background-color: red ;
+    border-radius: 5px;
+}
+
+/* the circle over the arrows*/
+.seconds::after
+{
+    content: "";
+    position: absolute;
+    top: 170px;
+    left: -10px;
+    height: 25px;
+    width: 25px;
+
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* the animation of the arrows */
+ @keyframes secondRotation {
+    0%  {transform: rotateZ(calc( var(--deg-second )*1deg )); }
+    100% {transform: rotateZ(calc( var(--deg-second )*1deg  + 360 *1deg ));}
+}
+
+@keyframes hourRotation {
+    0%{ transform: rotateZ(calc( var(--deg-hour )*1deg ));}
+    100%{transform: rotateZ(calc( var(--deg-hour )*1deg  + 360 *1deg ));}
+    
+}
+@keyframes minuteRotation {
+    0% {transform: rotateZ(calc( var(--deg-minute )*1deg ));}
+    100%{transform: rotateZ(calc( var(--deg-minute)*1deg  + 360 *1deg ));}
+    
+}
