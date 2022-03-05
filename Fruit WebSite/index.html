@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr-Fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <title>Fruit Website</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <section>
+            <div class="bg"></div>
+            <header>
+                <a href="#" class="logo" >Fruit</a>
+                <ul class="navigation">
+                    <li><a href="#" class="active">Accueil</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Apropos de nous</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact Nous!</a></li>
+                </ul>
+            </header>
+            <div class="contenu">
+                <div class="text-boite">
+                    <h2>Consommer Fruits</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium est rerum, aliquid, voluptatem tempora sint minus temporibus minima dolorem corrupti ratione nemo exercitationem voluptatum illum vitae laborum eum quo! Pariatur eos inventore obcaecati rem vel labore dignissimos officia sapiente autem?</p>
+                    <a href="#" class="btn"><span></span> Savoir Plus</a>
+                </div>
+                <div class="imgboite">
+                    <img src="./image/bgorange.png" alt="" class="ImgFruit">
+                </div>
+            </div>
+
+            <ul class="tab">
+                <li data-text="1"> <img src="./image/orange.png" onclick="imageSlider('./image/bgorange.png'); ColeurF(''); ">       </li>
+                <li data-text="2"> <img src="./image/tomate.png"  onclick="imageSlider('./image/bgtomate.png'); ColeurF('#F21616');"></li>
+                <li data-text="3"> <img src="./image/salade.png"  onclick="imageSlider('./image/bgsalade.png'); ColeurF('#6c9330');"></li>
+                <li data-text="4"> <img src="./image/bluebarry.png"  onclick="imageSlider('./image/bgbluebarry.png'); ColeurF('#930240');"></li>
+            </ul>
+            
+            <div class="reseaux" >
+                <a href="https://web.facebook.com/mehdi.moulati.7/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/mehdi_maesta/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/maesta_mehdi"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/mehdi-moulati-441737177/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+        <script>
+            function imageSlider(image){
+                document.querySelector('.ImgFruit').src = image
+            }
+
+            function ColeurF(couleur){
+                document.querySelector('.bg').style.background = couleur
+            }  
+        </script>
+    </body>
+</html>
