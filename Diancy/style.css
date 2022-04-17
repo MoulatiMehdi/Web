@@ -44,7 +44,7 @@ img{
     height: 100px;
     text-align: center;
     font-family: 'Open Sans Condensed ExtraBold';
-    font-size: 19px;
+    font-size: 130%;
     
 }
 .menu li:hover{
@@ -56,85 +56,69 @@ img{
 .menu li:hover a{
     color: #f64775;
     
+    
 }
 
 .menu li:active {
     
     transform: scale(0.9) ;
+    transition: 0.3s;
+
 }
 
 
 
 
 .Button{
-    height: 60px;
-    line-height: 60px;
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
- }
- .Button a{
-    color: #f64775;
-
- }
-.Button>div{
 
     position: relative;
-    width: 150px;
-    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+   
+    
+ }
+ 
+.Button>a{
+
+    position: relative;
+    padding: 7px 20px;
     border-radius: 20px;
-    line-height: 35px;
-
-    font-size: 13px;
     font-weight: 800;
-    letter-spacing: 2px;
-
     color: #f64775;
     background-color: white;
-   
-    text-align: center;
-    text-transform: uppercase;
     font-family: 'Open Sans Condensed ExtraBold';
-    font-size: 17px;
-    
+    font-size: 105%;
+    border: 2px white solid;
+   
 }
-.Button span{
-    width: 0%;
-    height: 100%; 
-    border-radius: 20px;
+.Button a:hover{
+   
 
-    background-color: aqua;
+    color: white;
+    background-color: #8757ee;
+    border: white solid 2px ;
+    transition: 0.3s;
+}
+.Button a:active{
+    transform: scale(0.9);
 
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
+}
 
-}
-.Button div:hover span{
-    width: 100%;
-    transition: ease-in-out 0.6s;
-}
-.Button div:hover a{
-    color: red;
-    
-}
 
 
 
 
 .text>div>h1{
-    font-size: 60px;
-    
-    
+    font-size: 400%;
+      
 }
 .text>div>h3{
-    font-size: 25px;
+    font-size: 130%;
     font-weight: 450;
 }
 .text>div>h4{
-    font-size: 12px;
+    font-size: 70%;
     font-weight: 400;
     max-width: 600px;
 }
@@ -156,7 +140,7 @@ width: 40%;
 
     display: flex;
     justify-content:space-evenly;
-    align-items:flex-start;
+    align-items:center;
 
 }
 
@@ -164,9 +148,11 @@ width: 40%;
 
 .socialMedia{
 
-    height: 50px;
+    margin-top: 50px;
+    
     display: flex;
     justify-content: space-evenly; 
+    justify-items: center;
     
 }
 .socialMedia img{
@@ -175,10 +161,8 @@ width: 40%;
     height: 20px;
 }
 .socialMedia div{
-    
-    width: 20px;
     height: 20px;
-
+    width: 20px;
     padding: 10px;
     
     background-color: white;
@@ -186,6 +170,7 @@ width: 40%;
     border-radius: 10px;
 
 }
+
 
 .socialMedia div:hover{
     transform: rotateY(360deg);
