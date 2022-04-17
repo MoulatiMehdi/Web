@@ -82,6 +82,8 @@ header .navigation li a:hover{
     background-color: rgba(255,255,255,1);
     color:orangered;
 }
+
+
 .contenu{
     position: relative;
     width: 100%;
@@ -108,6 +110,9 @@ header .navigation li a:hover{
     transition: 0.6s ease-in-out;
 
 }
+
+
+
 .text-boite a span{
     width: 0;
     height: 100%;
@@ -127,6 +132,9 @@ header .navigation li a:hover{
 .text-boite a:hover{
     color: #fff;
 }
+
+
+
 .contenu .text-boite h2{
     color: #fff;
     font-size: 4rem;
